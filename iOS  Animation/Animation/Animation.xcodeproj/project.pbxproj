@@ -16,6 +16,9 @@
 		379FEC562253501400F0AF56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 379FEC552253501400F0AF56 /* main.m */; };
 		379FEC602253501500F0AF56 /* AnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 379FEC5F2253501500F0AF56 /* AnimationTests.m */; };
 		379FEC6B2253501500F0AF56 /* AnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 379FEC6A2253501500F0AF56 /* AnimationUITests.m */; };
+		379FEC7B2253620E00F0AF56 /* AnimationHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379FEC7A2253620E00F0AF56 /* AnimationHomeTableViewController.m */; };
+		379FEC82225368A600F0AF56 /* FireAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379FEC80225368A600F0AF56 /* FireAnimationViewController.m */; };
+		379FEC83225368A600F0AF56 /* FireAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379FEC81225368A600F0AF56 /* FireAnimationViewController.xib */; };
 		78F8FCEDC17C04745BEF8339 /* libPods-Animation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8CC59AFE8216AE350482E8 /* libPods-Animation.a */; };
 		9E8E7991F891EE6AE274B9AF /* libPods-AnimationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B7449606B2ECF90C18F237 /* libPods-AnimationTests.a */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,11 @@
 		379FEC662253501500F0AF56 /* AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		379FEC6A2253501500F0AF56 /* AnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationUITests.m; sourceTree = "<group>"; };
 		379FEC6C2253501500F0AF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379FEC792253620E00F0AF56 /* AnimationHomeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationHomeTableViewController.h; sourceTree = "<group>"; };
+		379FEC7A2253620E00F0AF56 /* AnimationHomeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationHomeTableViewController.m; sourceTree = "<group>"; };
+		379FEC7F225368A600F0AF56 /* FireAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireAnimationViewController.h; sourceTree = "<group>"; };
+		379FEC80225368A600F0AF56 /* FireAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireAnimationViewController.m; sourceTree = "<group>"; };
+		379FEC81225368A600F0AF56 /* FireAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FireAnimationViewController.xib; sourceTree = "<group>"; };
 		4E8CC59AFE8216AE350482E8 /* libPods-Animation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Animation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53128E908D1F2F7DD36212A5 /* libPods-AnimationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DF5BB69F481ADAF510CDAD /* Pods-AnimationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimationUITests/Pods-AnimationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +130,11 @@
 				379FEC472253501200F0AF56 /* AppDelegate.m */,
 				379FEC492253501200F0AF56 /* ViewController.h */,
 				379FEC4A2253501200F0AF56 /* ViewController.m */,
+				379FEC792253620E00F0AF56 /* AnimationHomeTableViewController.h */,
+				379FEC7A2253620E00F0AF56 /* AnimationHomeTableViewController.m */,
+				379FEC7F225368A600F0AF56 /* FireAnimationViewController.h */,
+				379FEC80225368A600F0AF56 /* FireAnimationViewController.m */,
+				379FEC81225368A600F0AF56 /* FireAnimationViewController.xib */,
 				379FEC4C2253501200F0AF56 /* Main.storyboard */,
 				379FEC4F2253501400F0AF56 /* Assets.xcassets */,
 				379FEC512253501400F0AF56 /* LaunchScreen.storyboard */,
@@ -159,7 +172,6 @@
 				88DF5BB69F481ADAF510CDAD /* Pods-AnimationUITests.debug.xcconfig */,
 				B3E08355384DCF0B289B6DE0 /* Pods-AnimationUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				379FEC532253501400F0AF56 /* LaunchScreen.storyboard in Resources */,
+				379FEC83225368A600F0AF56 /* FireAnimationViewController.xib in Resources */,
 				379FEC502253501400F0AF56 /* Assets.xcassets in Resources */,
 				379FEC4E2253501200F0AF56 /* Main.storyboard in Resources */,
 			);
@@ -376,7 +389,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				379FEC4B2253501200F0AF56 /* ViewController.m in Sources */,
+				379FEC7B2253620E00F0AF56 /* AnimationHomeTableViewController.m in Sources */,
 				379FEC562253501400F0AF56 /* main.m in Sources */,
+				379FEC82225368A600F0AF56 /* FireAnimationViewController.m in Sources */,
 				379FEC482253501200F0AF56 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
